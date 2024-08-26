@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/3830fc4322.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="image/icon.jpg">
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="popup">
+            <p id="text">Your guess is Correct</p>
+            <p>Score:</p><p id="pscore">0</p>
+            <button onclick="cancel()">OK</button>
+        </div>
+    </div>
+
+
+    <header id="header">
+       <button id="btn2"><a href="index.html"><i class="fa-solid fa-home fa-2x"></i></a></button>
+       <p>Option:</p><p id="score">3</p>
+       <button id="btn1"><i class="fa-solid fa-gear fa-2x"></i></button>
+    </header>
+
+    
+    <main id="main">
+        <section id="section">
+            <center>
+            <div id="explain">
+               <p>I am thinking of a number between 1 to 10,Now You are try to guess the number.</p>
+               <i class="fa-solid fa-robot fa-3x"></i>
+            </div></center>
+            <div id ="input"> 
+                <input type="number" id="input1" min="1" max="10">
+                <button onclick="correct()">Check</button>
+            </div>
+        </section>
+
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
